@@ -1,33 +1,21 @@
-import { mobx, observable, computed } from "mobx"
-class ObservableTodoStore {
-	@observable todos = [];
-    @observable pendingRequests = 0;
+import { observable, computed } from "mobx"
+import * as mobx from "mobx"
+export default class ApplicationStore {
+  // Text
+	@observable underConstruction = 'amandaroaf.me is under construction.';
 
-    constructor() {
-        mobx.autorun(() => console.log(this.report));
-    }
-
-	@computed get completedTodosCount() {
-    	return this.todos.filter(
-			todo => todo.completed === true
-		).length;
-    }
+  constructor() {
+      mobx.autorun(() => console.log(this.report));
+  }
 
 	@computed get report() {
-		if (this.todos.length === 0)
-			return "<none>";
-		return `Next todo: "${this.todos[0].task}". ` +
-			`Progress: ${this.completedTodosCount}/${this.todos.length}`;
+		return this.underConstruction;
 	}
 
-	addTodo(task) {
-		this.todos.push({
-			task: task,
-			completed: false,
-			assignee: null
-		});
-	}
+	setState(key, value) {
+    if (this[key] === undefined) {
+      throw new Error(`This state variable does not exist: ${key}`)
+    }
+    this[key] = value;
+  }
 }
-
-
-const observableTodoStore = new ObservableTodoStore();

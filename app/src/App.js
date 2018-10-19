@@ -4,7 +4,9 @@ import twitterIcon from './twitter_icon.svg'
 import linkedInIcon from './linkedin_icon.svg'
 import emailIcon from './email_icon.png'
 import './App.css';
+import {observer} from 'mobx-react'
 
+@observer
 class App extends Component {
 
   renderUnderConstruction() {
@@ -13,7 +15,8 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-            amandaroaf.me is under construction.
+            {this.props.store.underConstruction}
+            {/*amandaroaf.me is under construction.*/}
           </p>
         </header>
       </div>
