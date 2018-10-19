@@ -29,10 +29,14 @@ ReactDOM.render(<App store={ applicationStore }/>, document.getElementById('root
 // Learn more about service workers: http://bit.ly/CRA-PWA
 serviceWorker.unregister();
 
-fetch('https://test.miketheprogrammer.com/wp-json/wp/v2/acme_product')
+fetch('https://amandaroaf.me/wp-json/wp/v2/application_state')
 .then((r) => {
   console.log(r);
   return r.json()
 }).then((body) => {
-  console.log(body);
+  if (body.length > 0) {
+    if (body.acf && body.acf.under_construction) {
+      applicationStore.setState('underConstruction', body.acf.under_construction);
+    }
+  }
 })
