@@ -7,12 +7,20 @@ import ApplicationStore from './stores/application';
 
 const applicationStore = new ApplicationStore();
 
-setTimeout(() => {
-  applicationStore.setState('underConstruction', 'is not under construction.')
+function changeMessage() {
+  const timer = 2;
   setTimeout(() => {
-    applicationStore.setState('underConstruction', 'ooops');
-  }, 3 * 1000)
-}, 3 * 1000)
+    applicationStore.setState('underConstruction', 'is not under construction.')
+    setTimeout(() => {
+      applicationStore.setState('underConstruction', 'ooops');
+      setTimeout(() => {
+        applicationStore.setState('underConstruction', 'amandaroaf.me is under construction');
+        changeMessage();
+      }, timer * 1000);
+    }, timer * 1000);
+  }, timer * 1000);
+}
+changeMessage();
 
 ReactDOM.render(<App store={ applicationStore }/>, document.getElementById('root'));
 
