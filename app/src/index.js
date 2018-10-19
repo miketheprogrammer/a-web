@@ -35,8 +35,9 @@ fetch('https://amandaroaf.me/wp-json/wp/v2/application_state')
   return r.json()
 }).then((body) => {
   if (body.length > 0) {
-    if (body.acf && body.acf.under_construction) {
-      applicationStore.setState('underConstruction', body.acf.under_construction);
+    const appState = body[0]
+    if (appState.acf && appState.acf.under_construction) {
+      applicationStore.setState('underConstruction', appState.acf.under_construction);
     }
   }
 })
