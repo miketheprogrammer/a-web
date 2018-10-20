@@ -39,5 +39,16 @@ fetch('https://amandaroaf.me/wp-json/wp/v2/application_state')
     if (appState.acf && appState.acf.under_construction) {
       applicationStore.setState('underConstruction', appState.acf.under_construction);
     }
+    if (appState.acf && appState.acf.description) {
+      applicationStore.setState('description', appState.acf.description);
+    }
   }
+})
+
+fetch('https://amandaroaf.me/wp-json/wp/v2/projects')
+.then(r => r.json())
+.then((body) => {
+  body.forEach(() => {
+    console.log(project.acf);
+  })
 })
