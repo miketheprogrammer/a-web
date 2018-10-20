@@ -45,10 +45,10 @@ fetch('https://amandaroaf.me/wp-json/wp/v2/application_state')
   }
 })
 
-fetch('https://amandaroaf.me/wp-json/wp/v2/projects')
-.then(r => r.json())
-.then((body) => {
-  body.forEach(() => {
-    console.log(project.acf);
-  })
-})
+// fetch('https://amandaroaf.me/wp-json/wp/v2/projects')
+// .then(r => r.json())
+// .then((body) => {
+//   body.forEach(() => {
+//     console.log(project.acf);
+//   })
+// })

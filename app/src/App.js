@@ -59,10 +59,8 @@ class App extends Component {
           <img src={logo} className="app-logo-2" alt="logo" />
         </section>
 
-        <header className="intro" dangerouslySetInnerHTML={}>
-        {
+        <header className="intro">
           {this.props.store.description}
-        }
           {/*<p>Hey, I’m Amanda!</p>
           <p>
             I am a user experience designer living in Richmond, VA.  I work in web, mobile and service design. My career path has taken me from working as a nonprofit leader to applying my skills to the world of technology. I believe that good experiences come from commitment to empathy, data and design.
