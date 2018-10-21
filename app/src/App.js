@@ -5,7 +5,11 @@ import linkedInIcon from './linkedin_icon.svg'
 import emailIcon from './email_icon.png'
 import './App.css';
 import {observer} from 'mobx-react'
-
+import Projects from './components/projects/Projects'
+// import './css/acf.css'
+// import './css/field-group.css'
+// import './css/global.css'
+// import './css/input.css'
 @observer
 class App extends Component {
 
@@ -22,6 +26,7 @@ class App extends Component {
       </div>
     );
   }
+
 
   renderFull() {
     return (
@@ -59,8 +64,8 @@ class App extends Component {
           <img src={logo} className="app-logo-2" alt="logo" />
         </section>
 
-        <header className="intro">
-          {this.props.store.description}
+        <header className="intro" dangerouslySetInnerHTML={{__html: this.props.store.description}}>
+
           {/*<p>Hey, I’m Amanda!</p>
           <p>
             I am a user experience designer living in Richmond, VA.  I work in web, mobile and service design. My career path has taken me from working as a nonprofit leader to applying my skills to the world of technology. I believe that good experiences come from commitment to empathy, data and design.
@@ -70,48 +75,10 @@ class App extends Component {
         <header className="section-header">
           <p>My Projects</p>
         </header>
-
-        <section class="content-row">
-          <div className="projects">
-            <div className="cell">
-              <div className="card">
-                <img src="x" alt="Needs Image">
-                </img>
-              </div>
-            </div>
-            <div className="cell">
-              <div className="card">
-                <img src="x" alt="Needs Image">
-                </img>
-              </div>
-            </div>
-            <div className="cell">
-              <div className="card">
-                <img src="x" alt="Needs Image">
-                </img>
-              </div>
-            </div>
-            <div className="cell">
-              <div className="card">
-                <img src="x" alt="Needs Image">
-                </img>
-              </div>
-            </div>
-            <div className="cell">
-              <div className="card">
-                <img src="x" alt="Needs Image">
-                </img>
-              </div>
-            </div>
-            <div className="cell">
-              <div className="card">
-                <img src="x" alt="Needs Image">
-                </img>
-              </div>
-            </div>
-          </div>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 708" preserveAspectRatio="none"><path fill="#ac129b" d="M0.5,80.5l2400-80v628l-2400,80V80.5Z"></path></svg>
-        </section>
+        <Projects store={ this.props.store }></Projects>
+        <header className="section-header">
+          <p>Skills</p>
+        </header>
       </div>
     )
   }

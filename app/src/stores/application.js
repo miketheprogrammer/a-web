@@ -4,7 +4,11 @@ export default class ApplicationStore {
   // Text
 	@observable underConstruction = 'amandaroaf.me is under construction.';
 
-	@observable description = ''
+	@observable description = '';
+
+	@observable projects = [];
+
+	@observable activeProject = {};
 
   constructor() {
       mobx.autorun(() => console.log(this.report));

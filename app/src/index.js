@@ -45,10 +45,12 @@ fetch('https://amandaroaf.me/wp-json/wp/v2/application_state')
   }
 })
 
-// fetch('https://amandaroaf.me/wp-json/wp/v2/projects')
-// .then(r => r.json())
-// .then((body) => {
-//   body.forEach(() => {
-//     console.log(project.acf);
-//   })
-// })
+fetch('https://amandaroaf.me/wp-json/wp/v2/projects')
+.then(r => r.json())
+.then((projects) => {
+  projects = projects.map((project) => {
+    return project.acf;
+  })
+  console.log(projects);
+  applicationStore.setState('projects', projects);
+})
