@@ -38,7 +38,7 @@ class Projects extends Component {
         <div className="projects">
         {this.renderProjectCards()}
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 708" preserveAspectRatio="none"><path fill="#ac129b" d="M0.5,80.5l2400-80v628l-2400,80V80.5Z"></path></svg>
+        {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 708" preserveAspectRatio="none"><path fill="#ac129b" d="M0.5,80.5l2400-80v628l-2400,80V80.5Z"></path></svg> */}
       </section>
     )
   }
