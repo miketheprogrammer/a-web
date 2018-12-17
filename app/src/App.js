@@ -56,7 +56,7 @@ class App extends Component {
                 <a href={this.props.store.contact.twitter}><img src={twitterIcon} alt="Tw" /></a>
               </li>
               <li>
-                <a href={this.props.store.contact.instagram}><img src={emailIcon} alt="Mail" /></a>
+                <a href={`mailto:`+this.props.store.contact.email}><img src={emailIcon} alt="Mail" /></a>
               </li>
             </ul>
           </nav>
