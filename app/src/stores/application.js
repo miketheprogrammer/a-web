@@ -8,7 +8,7 @@ import * as mobx from "mobx"
 // import serviceDesign from "../images/service-design-for-social-justice.png";
 export default class ApplicationStore {
   // Text
-	@observable underConstruction = 'amandaroaf.me is under construction.';
+	@observable underConstruction = 'amandaroaf.me will be launched in a few days.';
 
 	@observable description = 'Hey, I’m Amanda!<br/><br/>I am a user experience designer living in Richmond, VA. I work in web, mobile and service design. My career path has taken me from working as a nonprofit leader to applying my skills to the world of technology. I believe that good experiences come from commitment to empathy, data and design.';
 
