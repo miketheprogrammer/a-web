@@ -50,13 +50,13 @@ class App extends Component {
           <nav className="nav nav-secondary">
             <ul>
               <li>
-                <a href="#linkedIn"><img src={linkedInIcon} alt="lnkdIn" /></a>
+                <a href={this.props.store.contact.linkedIn}><img src={linkedInIcon} alt="lnkdIn" /></a>
               </li>
               <li>
-                <a href="#twitter"><img src={twitterIcon} alt="Tw" /></a>
+                <a href={this.props.store.contact.twitter}><img src={twitterIcon} alt="Tw" /></a>
               </li>
               <li>
-                <a href="#mail"><img src={emailIcon} alt="Mail" /></a>
+                <a href={this.props.store.contact.instagram}><img src={emailIcon} alt="Mail" /></a>
               </li>
             </ul>
           </nav>
@@ -74,11 +74,11 @@ class App extends Component {
           </p>*/}
         </header>
         <div className="svg-wrap">
-          <header className="section-header">
+          <header id="projects" className="section-header">
             <p>My Projects</p>
           </header>
           <Projects store={ this.props.store }></Projects>
-          <header className="section-header">
+          <header id="about" className="section-header">
             <p>Skills</p>
           </header>
           <Skills store={ this.props.store }></Skills>
@@ -89,7 +89,7 @@ class App extends Component {
           <div className="resume-link-wrapper">
             <a className="resume-link" target="_blank" href={this.props.store.resume.pdf_link}>You can download my full resume here.</a>
           </div>
-          <div className="email-link-wrapper">
+          <div id="contact" className="email-link-wrapper">
             <span className="email-text">Let’s connect! Email me at&nbsp;
               <a className="email-link" href={'mailto:'+this.props.store.contact.email}>{this.props.store.contact.email}</a>
             </span>

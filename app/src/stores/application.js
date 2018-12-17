@@ -104,7 +104,10 @@ export default class ApplicationStore {
   };
 
   @observable contact = {
-    email: "roafam1@gmail.com"
+    email: "roafam1@gmail.com",
+    linkedIn: "https://www.linkedin.com/in/amandaroaf",
+    twitter: "https://www.twitter.com/amandaroaf",
+    instagram: "https://www.instagram.com/amandaroaf",
   }
 
 	@observable activeProject = {};
