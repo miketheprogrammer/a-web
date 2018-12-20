@@ -115,10 +115,11 @@ class App extends Component {
   render() {
     const devMode = window.location.href.search('development=true') > -1;
     console.log(window.location.href);
-    if (devMode) {
-      return this.renderFull();
-    }
-    return this.renderUnderConstruction();
+    // if (devMode) {
+      // return this.renderFull();
+    // }
+    return this.renderFull();
+    // return this.renderUnderConstruction();
 
   }
 }
