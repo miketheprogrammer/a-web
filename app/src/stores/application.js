@@ -233,22 +233,27 @@ export default class ApplicationStore {
       <p class="ar-paragraph">
       I collaborated with a diverse team to create a social service experience consisting of an Android app, a website, GPS monitoring hardware, and support services for young people ensnared in the criminal justice system. Introducing new technology and programming options to the court system resulted in the release of several young people from jail while they awaited sentencing. The team uncovered the ways in which this technology could be helpful in certain cases and harmful in others and ultimately determined the program would benefit adults charged with higher level charges more than the young people it was tested on. Organizations are now evaluating the technology piloted in this program for use in less restrictive settings and on different populations.
       </p>
+      <br/>
       <p class="ar-paragraph">
       <strong>Strategy & Goals: </strong>
       The team included tech companies, social service staff, criminal prosecutors, and young defendants. The purpose of the program was to enhance communication between the young people and their support networks while they were being monitored by the court.
       </p>
+      <br/>
       <p class="ar-paragraph">
       <strong>Research: </strong>
       In the early stages of program development, I crafted personas based on research of the target demographic and shared these at team meetings to inform design. I interviewed users throughout the program to understand their day-to-day interactions with the products, their pain points, and their goals and took this information back to the stakeholders to advocate for necessary changes.
       </p>
+      <br/>
       <p class="ar-paragraph">
       <strong>Prototyping & Design: </strong>
       I worked with the stakeholders to evaluate different technologies, troubleshoot and test the products with users, and iterate on the design of the various products. I crafted different experiences with different combinations of products and features to understand which combination best met the needs of our stakeholders and our users. This included assessing the users’ home and service environments, understanding how the technology may be used in these environments and working with service staff to assess and improve their systems of record to interact seamlessly with the tech.
       </p>
+      <br/>
       <p class="ar-paragraph">
       <strong>Usability Testing: </strong>
       Once the chosen experience was implemented, I analyzed data from the app and from user interviews on a weekly basis to challenge existing policies and practices that governed the use of the technology.
       </p>
+      <br/>
       <p class="ar-paragraph">
       <strong>Handoff and Iteration: </strong>
       I worked with our tech vendors throughout the pilot rollout to ensure that they had critical information about design flaws, bugs, and user needs. I worked with stakeholders in other jurisdictions to explore the use of these technologies in their settings and brought back changes that would be needed to explore iterations with our internal team.
