@@ -7,8 +7,8 @@ export default class ApplicationStore {
   
   @observable projects_html = {
     'efficient-and-impactful-m-commerce': {
-      card_sub_title: "Efficient and Impactful M-Commerce",
       wysiwyg: `
+      <h1 class="ar-section-header">Efficient and Impactful M-Commerce</h1>
       <p class="ar-paragraph">
       I was the sole UX Designer for an exciting mobile 
       commerce project with Luckstone. I worked with 
@@ -56,7 +56,56 @@ export default class ApplicationStore {
         <img class="ar-image ar-img-lg" src="https://amandaroaf.files.wordpress.com/2018/04/screen-shot-2018-08-02-at-10-27-00-am.png"></img>
       </div>
       `,
-    }
+    },
+    'responsive-web-design-for-youth': {
+      wysiwyg: `
+      <h1 class="ar-section-header">RESPONSIVE WEB DESIGN IN A GOAL SETTING PLATFORM</h1>
+      <div class="ar-image">
+        <img class="ar-image ar-img-sm" src="https://amandaroaf.files.wordpress.com/2017/06/screen-shot-2017-11-13-at-6-04-54-pm.png"></img>
+      </div>
+      <p class="ar-paragraph">
+      I recently worked with the talented team at Think of Us, a nonprofit tech company that seeks to build a platform that will support and empower young people as they transition out of the foster care system. I worked with a team of designers and share responsibilities including site mapping, brainstorming, wireframing, prototyping, and usability testing.  I also participated in several community events where I had the chance to work with young people and alumni of the foster care system to design a better way to set goals and seek supports with the platform.
+      </p>
+      <br/>
+      <p class="ar-paragraph">
+        <strong>
+        My key responsibilities: User research and analysis, independent creation of landing page and loading graphics, creation of UI design for platform features with the deign team, and iterating on designs with the insight of the development team. 
+        </strong>
+      </p>
+      <div class="ar-image">
+        <img class="ar-image ar-img-sm" src="https://amandaroaf.files.wordpress.com/2017/07/designathon.jpg"></img>
+      </div>
+      <p class="ar-paragraph">
+      <strong>Strategy & Goals:</strong> We began by establishing a firm expectation for our newly formed design team around the design process. I familiarized myself with the previous work on the platform and spent time learning about the goals of the company and its staff. I identified the non-negotiable business goals and began thinking through ways to hit these markers in the design.
+      </p>
+      <div class="ar-image">
+        <img class="ar-image ar-img-sm" src="https://amandaroaf.files.wordpress.com/2017/07/brainstorming-e1507667698302.png"></img>
+      </div>
+      <p class="ar-paragraph">
+      <strong>Research:</strong> I created discussion guides for our two primary target audiences and conducted interviews with several members of our customer base. I aggregated this data into a spreadsheet and began to organize content into themes and patterns for design and stakeholder needs. I brainstormed and sketched feature ideas with the design team until we had a focused set of ideas for lo-fi wireframes. I used Sketch and Invision to create wireframes for main user flows and tested these early designs on our users utilizing both in-depth testing techniques and brief tests. I organized this data and met with the team to discuss common issues and themes in feedback from users.
+      </p>
+      <br/>
+      <br/>
+      <p class="ar-paragraph">
+      <strong>Prototyping & Design:</strong> Using the feedback from our customers, I worked with the design team to create mockups of the main platform screens in Sketch. We pulled in some features from the original version of the platform as well as a mockup from a design firm presented to us as a tentative style guide. We had daily team meetings and weekly meetings with executives to stay on track. During this process I created UI for landing and sign in pages, an array of navigation options, color schemes, and vector graphics.
+      </p>
+      <div class="ar-image">
+        <img class="ar-image ar-img-sm" src="https://amandaroaf.files.wordpress.com/2017/07/20170807_123238.jpg"></img>
+      </div>
+      <p class="ar-paragraph">
+      <strong>Usability Testing:</strong> I utilized Invision to test the high-fidelity prototypes with our primary user groups and brought this data back to the team to iterate on our first wave of designs. During this part of the process we received significant stakeholder feedback on their goals and needs from the platform which created several large iterations on the initial design. I helped the team plan community-based events that provided a forum for usability testing as well as general research.
+      </p>
+      <p class="ar-paragraph">
+      <strong>Handoff and Iteration:</strong> I uploaded the Sketch designs into Zeplin and worked with the team to create a style guide for the developers. I began checking in with the development team to ensure that our high-level designs were achievable and worked on iterations for feature designs that were not realistic. I worked with the team to come up with a structured process for collaborating on design files and working simultaneously with the development team so that no changes were lost in the process.
+      </p>
+      <div class="ar-image">
+        <img class="ar-image ar-img-lg" src="https://amandaroaf.files.wordpress.com/2017/06/screen-shot-2017-11-13-at-6-04-54-pm.png?"></img>
+      </div>
+      <div class="ar-image">
+        <img class="ar-image ar-img-sm" src="https://amandaroaf.files.wordpress.com/2017/06/screen-shot-2017-11-13-at-6-02-59-pm.png"></img>
+      </div>
+      `
+    },
   }
 
 	@observable projects = [
@@ -67,6 +116,7 @@ export default class ApplicationStore {
       sort_order: "10",
     },
     {
+      slug: "responsive-web-design-for-youth",
       card_sub_title: "Respnsive Web Design for Youth",
       card_image: "/responsive-web-design-for-youth.png",
       sort_order: "20",
