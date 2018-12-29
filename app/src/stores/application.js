@@ -222,6 +222,8 @@ export default class ApplicationStore {
         <strong>Handoff and Iteration: </strong>
         Once the pages are presented to the partners we will have a sense of their desire to move forward with a website for the initiative. It is my goal to be fully involved in that process if a full website is desired.
       </p>
+      `
+    },
       
 
   }
