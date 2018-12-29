@@ -179,6 +179,50 @@ export default class ApplicationStore {
       </div>
       `
     },
+    'landing-page-for-first-impressions': {
+      wysiwyg: `
+      <h1 class="ar-section-header">LANDING PAGE FOR FIRST IMPRESSIONS</h1>
+      <div class="ar-image">
+        <img class="ar-image ar-img-lg" src="https://amandaroaf.files.wordpress.com/2017/07/screen-shot-2017-12-04-at-11-20-29-am-e1512420727332.png"></img>
+      </div>
+      <p class="ar-paragraph">
+      I was tasked with creating a landing page for a new community initiative that did not yet have its own web presence. This is something that my managers wanted to offer to this partner as a bonus feature of the platform we are creating. Given the circumstances, I had to engage in creative strategizing to conduct a full design cycle for this project.
+      </p>
+      <p class="ar-paragraph">
+      <strong>My Key Responsibilities: </strong>
+      I was the sole designer assigned to this project. I was responsible for the full process from researching the organization to sketching, wireframing and creating a clickable design ready for development. 
+      </p>
+      <br/>
+      <p class="ar-paragraph">
+      <strong>Strategy & Goals: </strong>
+      This project is for remote partners who specialize in building healthy communities through engaging with young people. The partnership consists of two corporations with very different missions. Given that we wanted to surprise the partners with a sample landing page, I was unable to fully interview the stakeholders regarding their needs and goals for a landing page. I did, however, have the opportunity to attend one of their youth events and collected some data from stakeholders and users via this forum.
+      </p>
+      <br/>
+      <p class="ar-paragraph">
+      <strong>Research: </strong>
+      I was able to use data from the recent youth event to begin planning the landing page. During the event we tested basic features of our platform with users and also got to know more about their goals and motivations. I also spent time getting to know the stakeholders and their goals for this particular event. I also got a better sense of the background of this partnership. Though this information was not collected through the lens of needing a landing page design, I was able to use it to guide the project. Since the initiative currently has no website, I began with thinking through what the site might contain so that I could build a landing page that would highlight the most pertinent information for the initiative. I spoke with my managers to assess their understanding of what the partners may want and created an affinity diagram to organize the site’s potential content and to better understand what would likely be needed down the line.
+      </p>
+      <br/>
+      <p class="ar-paragraph">
+      <strong>Prototyping & Design: </strong>
+      I took my top 3 content areas and features and began sketching landing page ideas by hand. I considered that the audience for this page will usually be adolescents who are involved in community events and sought out best practices and pitfalls to keep in mind when designing for this age group. After I narrowed down my top 3 sketches, I began wireframing these ideas using Balsamiq to get a better sense of how these pages would look on the screen. After reviewing early wireframes with my managers, I edited the structure and content based on their feedback. Next I moved to prototyping in Adobe XD. I built the structures in greyscale initially then consulted press documents on the initiative to craft a color scheme that was consistent with their existing branding. I also pulled in logo files and available photo content to round out the design. I decided to finalize three very different landing pages so that the partners could see different possible approaches to the site.
+      </p>
+      <br/>
+      <div class="ar-image">
+        <img class="ar-image ar-img-lg" src="https://amandaroaf.files.wordpress.com/2017/10/screen-shot-2017-10-10-at-11-01-00-am.png"></img>
+      </div>
+      <p class="ar-paragraph">
+      <strong>Usability Testing: </strong>
+      Using Adobe XD and Lookback, I did some initial testing of the three pages with young people and adults to get a sense of the ways that people interacted with the page and also the content they were most drawn to. My main objective with this early testing was to ensure that the button which launches another platform was highly usable. I hope to have a chance to test the page chosen by the partners with the site’s actual users.
+      </p>
+      <div class="ar-image">
+        <img class="ar-image ar-img-lg" src="https://amandaroaf.files.wordpress.com/2017/10/screen-shot-2017-10-17-at-3-35-37-pm.png"></img>
+      </div>
+      <p class="ar-paragraph">
+        <strong>Handoff and Iteration: </strong>
+        Once the pages are presented to the partners we will have a sense of their desire to move forward with a website for the initiative. It is my goal to be fully involved in that process if a full website is desired.
+      </p>
+      
 
   }
 
@@ -208,6 +252,7 @@ export default class ApplicationStore {
       sort_order: "40",
     },
     {
+      slug: "landing-page-for-first-impressions"
       card_sub_title: "Landing Page for First Impressions",
       card_image: "/landing-page-for-first-impressions.png",
       sort_order: "50",
