@@ -18,7 +18,11 @@ class Projects extends Component {
     console.log(store.projects, sorted);
     return sorted.map((project) => {
         return (<div className="cell">
-          <div className="card">
+          <div onClick={() => {
+              if (project.slug) {
+                window.location.href = `/projects/${project.slug}`;
+              }
+            }} className="card">
             <div className="card-image">
               <img className="contain-image" src={project.card_image} alt="Needs Image">
               </img>

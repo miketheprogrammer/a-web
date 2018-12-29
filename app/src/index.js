@@ -2,8 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Project from './Project';
 import * as serviceWorker from './serviceWorker';
 import ApplicationStore from './stores/application';
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 
 const applicationStore = new ApplicationStore();
 //
@@ -22,7 +24,23 @@ const applicationStore = new ApplicationStore();
 // }
 // changeMessage();
 
-ReactDOM.render(<App store={ applicationStore }/>, document.getElementById('root'));
+
+
+
+// ReactDOM.render(<App store={ applicationStore }/>, document.getElementById('root'));
+ReactDOM.render(
+  <Router>
+  <div>
+    <Switch>
+    <Route path="/projects/:slug" component={(props) => {
+        console.log('routerx', props);
+        return (<Project project={ props.match.params.slug } store={ applicationStore }/>)
+      }} />
+      <Route path="" component={() => <App store={ applicationStore }/>} />
+    </Switch>
+  </div>
+</Router>
+, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
