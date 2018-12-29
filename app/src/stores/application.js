@@ -142,15 +142,41 @@ export default class ApplicationStore {
       </div>
       `
     },
-    'from-xinstagram-to-ios': {
+    're-imagining-small-business-sales': {
       wysiwyg: `
-      <h1 class="ar-section-header">FROM INSTAGRAM POSTS TO IOS</h1>
+      <h1 class="ar-section-header">RE-IMAGINING SMALL BUSINESS SALES</h1>
       <div class="ar-image">
-        <img class="ar-image ar-img-sm" src="https://amandaroaf.files.wordpress.com/2017/06/screen-shot-2017-11-13-at-6-04-54-pm.png"></img>
+        <img class="ar-image ar-img-lg" src="https://amandaroaf.files.wordpress.com/2017/11/tech-grey-log-in.jpg"></img>
       </div>
       <p class="ar-paragraph">
-      I love the challenge of taking data in its various forms and designing a mobile experience to complement or replace it. I recently got the chance to support another fitness business, Body by Maria, by creating a platform for the owner’s hard work to be showcased. I was asked to take information from my client’s social media accounts and create an easy-to-navigate iOS app for her clients to discover the exercise classes she offers.
+      I worked with a small business to update their web-based sales platform and to create a new logo for the product. I discussed the development limitations and business goals with the CEO prior to starting sketches. Using the existing site, I was asked to stay close to the functionality presented but to make the data entry process easier and more visually pleasing.
       </p>
+      <p class="ar-paragraph">
+        <strong>
+        My Key Responsibilities: This was an independent freelance contract where I was the sole designer. I carried out the full process from research with stakeholders, to sketching, wireframing, and creating full color designs and graphics ready for development.
+        </strong>
+      </p>
+      <div class="ar-image">
+        <img class="ar-image ar-img-lg" src="https://amandaroaf.files.wordpress.com/2017/11/grey-tour-entry.png"></img>
+      </div>
+      <p class="ar-paragraph">
+      I came up with a grid option that put the data entry process first instead of side-by-side with the spreadsheet. Through analyzing the site map, I found areas where existing menu items or buttons could be combined into an easy-to-navigate interface. I crafted a reporting feature that made it simple to choose business locations and report types. The previous site had several separate menus for this feature. The changes made will allow busy sales managers to quickly view and print the exact data they need.      
+      </p>
+      <div class="ar-image">
+        <img class="ar-image ar-img-lg" src="https://amandaroaf.files.wordpress.com/2017/11/tech-grey-log-in.jpg"></img>
+      </div>
+      <div class="ar-image">
+        <img class="ar-image ar-img-lg" src="https://amandaroaf.files.wordpress.com/2017/11/grey-reports.png"></img>
+      </div>
+      <p class="ar-paragraph">
+        Lastly, using a competitor research analysis, I chose three color scheme options that work well for the fitness market. In all of my work where I have limited time to iterate with the developers, I offer several options as a part of the final package so that there is more to pull from if one element does not work the way it was intended or the company wants a different visual direction in the future.
+      </p>
+      <div class="ar-image">
+        <img class="ar-image ar-img-lg" src="https://amandaroaf.files.wordpress.com/2017/11/color-log-in-desktop.jpg"></img>
+      </div>
+      <div class="ar-image">
+        <img class="ar-image ar-img-lg" src="https://amandaroaf.files.wordpress.com/2017/11/color-log-in-desktop.jpg"></img>
+      </div>
       `
     },
 
@@ -170,6 +196,7 @@ export default class ApplicationStore {
       sort_order: "20",
     },
     {
+      slug: "re-imagining-small-business-sales",
       card_sub_title: "Re-Imagining Small Business Sales",
       card_image: "/re-imagining-small-business-sales.png",
       sort_order: "30",
