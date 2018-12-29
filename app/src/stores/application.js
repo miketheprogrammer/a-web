@@ -183,7 +183,7 @@ export default class ApplicationStore {
       wysiwyg: `
       <h1 class="ar-section-header">LANDING PAGE FOR FIRST IMPRESSIONS</h1>
       <div class="ar-image">
-        <img class="ar-image ar-img-lg" src="https://amandaroaf.files.wordpress.com/2017/07/screen-shot-2017-12-04-at-11-20-29-am-e1512420727332.png"></img>
+        <img class="ar-image ar-img-sm" src="https://amandaroaf.files.wordpress.com/2017/07/screen-shot-2017-12-04-at-11-20-29-am-e1512420727332.png"></img>
       </div>
       <p class="ar-paragraph">
       I was tasked with creating a landing page for a new community initiative that did not yet have its own web presence. This is something that my managers wanted to offer to this partner as a bonus feature of the platform we are creating. Given the circumstances, I had to engage in creative strategizing to conduct a full design cycle for this project.
@@ -209,14 +209,14 @@ export default class ApplicationStore {
       </p>
       <br/>
       <div class="ar-image">
-        <img class="ar-image ar-img-lg" src="https://amandaroaf.files.wordpress.com/2017/10/screen-shot-2017-10-10-at-11-01-00-am.png"></img>
+        <img class="ar-image ar-img-sm" src="https://amandaroaf.files.wordpress.com/2017/10/screen-shot-2017-10-10-at-11-01-00-am.png"></img>
       </div>
       <p class="ar-paragraph">
       <strong>Usability Testing: </strong>
       Using Adobe XD and Lookback, I did some initial testing of the three pages with young people and adults to get a sense of the ways that people interacted with the page and also the content they were most drawn to. My main objective with this early testing was to ensure that the button which launches another platform was highly usable. I hope to have a chance to test the page chosen by the partners with the site’s actual users.
       </p>
       <div class="ar-image">
-        <img class="ar-image ar-img-lg" src="https://amandaroaf.files.wordpress.com/2017/10/screen-shot-2017-10-17-at-3-35-37-pm.png"></img>
+        <img class="ar-image ar-img-sm" src="https://amandaroaf.files.wordpress.com/2017/10/screen-shot-2017-10-17-at-3-35-37-pm.png"></img>
       </div>
       <p class="ar-paragraph">
         <strong>Handoff and Iteration: </strong>
