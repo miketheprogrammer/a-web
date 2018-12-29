@@ -106,6 +106,54 @@ export default class ApplicationStore {
       </div>
       `
     },
+    'from-instagram-to-ios': {
+      wysiwyg: `
+      <h1 class="ar-section-header">FROM INSTAGRAM POSTS TO IOS</h1>
+      <br/>
+      <br/>
+      <p class="ar-paragraph">
+      I love the challenge of taking data in its various forms and designing a mobile experience to complement or replace it. I recently got the chance to support another fitness business, Body by Maria, by creating a platform for the owner’s hard work to be showcased. I was asked to take information from my client’s social media accounts and create an easy-to-navigate iOS app for her clients to discover the exercise classes she offers.
+      </p>
+      <br/>
+      <p class="ar-paragraph">
+      My client’s main goals were to have a system for uploading her schedule at the beginning of each week and for that schedule to be easily accessed by her clients. I took instagram posts where my client placed a list of 20 classes being offered during the week and crafted an intuitive, navigable app for her schedule to exist.
+      </p>
+      <div class="ar-image">
+        <img class="ar-image ar-img-md" src="https://amandaroaf.files.wordpress.com/2018/04/screen-shot-2018-04-16-at-7-15-03-pm.png"></img>
+      </div>
+      <p class="ar-paragraph">
+      I first worked with my client to determine the pertinent content for each class including name, description, price, and date and time of class. I began working on options to illustrate that information. I worked through various client scenarios for needing to access the schedule to inform the architecture of the app. I established use cases for brand new clients learning about my client’s business from a friend as well as uses for veteran clients who knew the business well. I wanted to be sure that the app would be useful to the business’s spectrum of clients.
+      </p>
+      <br/>
+      <p class="ar-paragraph">
+      After doing quick usability tests on different schedule formats, I began working with the developer on the project to ensure that my designs were technically feasible. We worked together to refine the app and to create a seamless, intuitive product.
+      </p>
+      <div class="ar-image">
+        <img class="ar-image ar-img-lg" src="https://amandaroaf.files.wordpress.com/2018/04/option-1.png"></img>
+      </div>
+      <p class="ar-paragraph">
+      I rounded out the project by providing my client with several color options for the main app as well as an upgraded logo and splash screen to mesh with the overall feel of the UI.
+      </p>
+      <div class="ar-image">
+        <img class="ar-image ar-img-xsm" src="https://amandaroaf.files.wordpress.com/2018/04/screen-shot-2018-04-16-at-7-35-36-pm.png"></img>
+      </div>
+      <div class="ar-image">
+        <img class="ar-image ar-img-sm" src="https://amandaroaf.files.wordpress.com/2018/04/screen-shot-2018-04-16-at-7-33-53-pm-e1523921853476.png"></img>
+      </div>
+      `
+    },
+    'from-xinstagram-to-ios': {
+      wysiwyg: `
+      <h1 class="ar-section-header">FROM INSTAGRAM POSTS TO IOS</h1>
+      <div class="ar-image">
+        <img class="ar-image ar-img-sm" src="https://amandaroaf.files.wordpress.com/2017/06/screen-shot-2017-11-13-at-6-04-54-pm.png"></img>
+      </div>
+      <p class="ar-paragraph">
+      I love the challenge of taking data in its various forms and designing a mobile experience to complement or replace it. I recently got the chance to support another fitness business, Body by Maria, by creating a platform for the owner’s hard work to be showcased. I was asked to take information from my client’s social media accounts and create an easy-to-navigate iOS app for her clients to discover the exercise classes she offers.
+      </p>
+      `
+    },
+
   }
 
 	@observable projects = [
@@ -127,6 +175,7 @@ export default class ApplicationStore {
       sort_order: "30",
     },
     {
+      slug: "from-instagram-to-ios",
       card_sub_title: "From Instagram to iOS",
       card_image: "/from-instagram-to-ios.png",
       sort_order: "40",
