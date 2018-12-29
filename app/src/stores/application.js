@@ -254,7 +254,7 @@ export default class ApplicationStore {
       sort_order: "40",
     },
     {
-      slug: "landing-page-for-first-impressions"
+      slug: "landing-page-for-first-impressions",
       card_sub_title: "Landing Page for First Impressions",
       card_image: "/landing-page-for-first-impressions.png",
       sort_order: "50",
