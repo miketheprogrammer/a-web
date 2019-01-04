@@ -79,5 +79,6 @@ fetch('https://amandaroaf.me/wp-json/wp/v2/projects')
   });
   console.log(projects);
   applicationStore.setState('projects', projects);
+  console.log(projects_html);
   applicationStore.setState('projects_html', projects_html);
 })
