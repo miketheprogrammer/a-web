@@ -7,7 +7,7 @@ export default class ApplicationStore {
   
   @observable projects_html = {
     'efficient-and-impactful-m-commerce': {
-      wysiwyg: `
+      project_page: `
       <h1 class="ar-section-header">Efficient and Impactful M-Commerce</h1>
       <p class="ar-paragraph">
       I was the sole UX Designer for an exciting mobile 
@@ -58,7 +58,7 @@ export default class ApplicationStore {
       `,
     },
     'responsive-web-design-for-youth': {
-      wysiwyg: `
+      project_page: `
       <h1 class="ar-section-header">RESPONSIVE WEB DESIGN IN A GOAL SETTING PLATFORM</h1>
       <div class="ar-image">
         <img class="ar-image ar-img-sm" src="https://amandaroaf.files.wordpress.com/2017/06/screen-shot-2017-11-13-at-6-04-54-pm.png"></img>
@@ -107,7 +107,7 @@ export default class ApplicationStore {
       `
     },
     'from-instagram-to-ios': {
-      wysiwyg: `
+      project_page: `
       <h1 class="ar-section-header">FROM INSTAGRAM POSTS TO IOS</h1>
       <br/>
       <br/>
@@ -143,7 +143,7 @@ export default class ApplicationStore {
       `
     },
     're-imagining-small-business-sales': {
-      wysiwyg: `
+      project_page: `
       <h1 class="ar-section-header">RE-IMAGINING SMALL BUSINESS SALES</h1>
       <div class="ar-image">
         <img class="ar-image ar-img-lg" src="https://amandaroaf.files.wordpress.com/2017/11/tech-grey-log-in.jpg"></img>
@@ -180,7 +180,7 @@ export default class ApplicationStore {
       `
     },
     'landing-page-for-first-impressions': {
-      wysiwyg: `
+      project_page: `
       <h1 class="ar-section-header">LANDING PAGE FOR FIRST IMPRESSIONS</h1>
       <div class="ar-image">
         <img class="ar-image ar-img-sm" src="https://amandaroaf.files.wordpress.com/2017/07/screen-shot-2017-12-04-at-11-20-29-am-e1512420727332.png"></img>
@@ -225,7 +225,7 @@ export default class ApplicationStore {
       `
     },
     'service-design-for-social-justice': {
-      wysiwyg: `
+      project_page: `
       <h1 class="ar-section-header">SERVICE DESIGN FOR SOCIAL SERVICE</h1>
       <div class="ar-image">
         <img class="ar-image ar-img-lg" src="https://amandaroaf.files.wordpress.com/2017/06/20170821_165203.jpg"></img>

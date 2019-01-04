@@ -47,28 +47,37 @@ ReactDOM.render(
 // Learn more about service workers: http://bit.ly/CRA-PWA
 serviceWorker.unregister();
 
-// fetch('https://amandaroaf.me/wp-json/wp/v2/application_state')
-// .then((r) => {
-//   console.log(r);
-//   return r.json()
-// }).then((body) => {
-//   if (body.length > 0) {
-//     const appState = body[0]
-//     if (appState.acf && appState.acf.under_construction) {
-//       applicationStore.setState('underConstruction', appState.acf.under_construction);
-//     }
-//     if (appState.acf && appState.acf.description) {
-//       applicationStore.setState('description', appState.acf.description);
-//     }
-//   }
-// })
+fetch('https://amandaroaf.me/wp-json/wp/v2/application_state')
+.then((r) => {
+  console.log(r);
+  return r.json()
+}).then((body) => {
+  if (body.length > 0) {
+    const appState = body[0]
+    if (appState.acf && appState.acf.under_construction) {
+      applicationStore.setState('underConstruction', appState.acf.under_construction);
+    }
+    if (appState.acf && appState.acf.description) {
+      applicationStore.setState('description', appState.acf.description);
+    }
+  }
+})
 
-// fetch('https://amandaroaf.me/wp-json/wp/v2/projects')
-// .then(r => r.json())
-// .then((projects) => {
-//   projects = projects.map((project) => {
-//     return project.acf;
-//   })
-//   console.log(projects);
-//   applicationStore.setState('projects', projects);
-// })
+fetch('https://amandaroaf.me/wp-json/wp/v2/projects')
+.then(r => r.json())
+.then((projects) => {
+  const projects_html = {}
+  projects = projects
+  .filter((project) => {
+    return project.status === "publish";
+  })
+  .map((project) => {
+    projects_html[project.slug] = {
+      project_page: project.acf.project_page || '',
+    }
+    return {...project.acf, slug: project.slug};
+  });
+  console.log(projects);
+  applicationStore.setState('projects', projects);
+  applicationStore.setState('projects_html', projects_html);
+})

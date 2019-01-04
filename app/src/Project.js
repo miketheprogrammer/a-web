@@ -65,7 +65,7 @@ class Project extends Component {
         <div class="page">
           <div class="content-row unsafe-block">
             <section class="top-spacing">&nbsp;</section>
-            <div dangerouslySetInnerHTML={{__html: this.props.store.projects_html[this.props.project].wysiwyg}}/>
+            <div dangerouslySetInnerHTML={{__html: this.props.store.projects_html[this.props.project].project_page}}/>
           </div>
         </div>
 
