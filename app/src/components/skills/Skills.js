@@ -7,6 +7,7 @@ class Skills extends Component {
   renderSkillCards() {
     const store = this.props.store;
     const sort = (a,b) => {
+      console.log(a.sort_order);
       return parseInt(a.sort_order) - parseInt(b.sort_order);
     }
     const sorted = store.skills.sort(sort);

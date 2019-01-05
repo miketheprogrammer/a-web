@@ -47,38 +47,76 @@ ReactDOM.render(
 // Learn more about service workers: http://bit.ly/CRA-PWA
 serviceWorker.unregister();
 
-fetch('https://amandaroaf.me/wp-json/wp/v2/application_state')
-.then((r) => {
-  console.log(r);
-  return r.json()
-}).then((body) => {
-  if (body.length > 0) {
-    const appState = body[0]
-    if (appState.acf && appState.acf.under_construction) {
-      applicationStore.setState('underConstruction', appState.acf.under_construction);
-    }
-    if (appState.acf && appState.acf.description) {
-      applicationStore.setState('description', appState.acf.description);
-    }
-  }
-})
 
-fetch('https://amandaroaf.me/wp-json/wp/v2/projects')
-.then(r => r.json())
-.then((projects) => {
-  const projects_html = {}
-  projects = projects
-  .filter((project) => {
-    return project.status === "publish";
-  })
-  .map((project) => {
-    projects_html[project.slug] = {
-      project_page: project.acf.project_page || '',
+
+const fetchAllData = () => {
+  fetch('https://amandaroaf.me/wp-json/wp/v2/application_state')
+  .then((r) => {
+    console.log(r);
+    return r.json()
+  }).then((body) => {
+    if (body.length > 0) {
+      const appState = body[0]
+      if (appState.acf && appState.acf.under_construction) {
+        applicationStore.setState('underConstruction', appState.acf.under_construction);
+      }
+      if (appState.acf && appState.acf.description) {
+        applicationStore.setState('description', appState.acf.description);
+      }
     }
-    return {...project.acf, slug: project.slug};
-  });
-  console.log(projects);
-  applicationStore.setState('projects', projects);
-  console.log(projects_html);
-  applicationStore.setState('projects_html', projects_html);
-})
+  })
+
+  fetch('https://amandaroaf.me/wp-json/wp/v2/projects')
+  .then(r => r.json())
+  .then((projects) => {
+    const projects_html = {}
+    projects = projects
+    .filter((project) => {
+      return project.status === "publish";
+    })
+    .map((project) => {
+      projects_html[project.slug] = {
+        project_page: project.acf.project_page || '',
+      }
+      return {...project.acf, slug: project.slug};
+    });
+    console.log(projects);
+    applicationStore.setState('projects', projects);
+    console.log(projects_html);
+    applicationStore.setState('projects_html', projects_html);
+  })
+
+  fetch('https://amandaroaf.me/wp-json/wp/v2/skills')
+  .then(r => r.json())
+  .then((skills) => {
+    skills = skills
+    .filter((skill) => {
+      return skill.status === "publish";
+    })
+    .map((skill) => {
+      return {...skill.acf, slug: skill.slug};
+    });
+    console.log(skills);
+    applicationStore.setState('skills', skills);
+  })
+
+
+  fetch('https://amandaroaf.me/wp-json/wp/v2/experiences')
+  .then(r => r.json())
+  .then((experiences) => {
+    experiences = experiences
+    .filter((experience) => {
+      return experience.status === "publish";
+    })
+    .map((experience) => {
+      return {...experience.acf, slug: experience.slug};
+    });
+    console.log(experiences);
+    applicationStore.setState('experiences', experiences);
+  })
+
+
+}
+
+
+setInterval(fetchAllData, 10000);
