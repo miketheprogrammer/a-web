@@ -118,5 +118,5 @@ const fetchAllData = () => {
 
 }
 
-
+fetchAllData();
 setInterval(fetchAllData, 10000);
