@@ -28,7 +28,13 @@ class Project extends Component {
 
 
   renderFull() {
-    console.log('wtf',this.props.store.projects_html, this.props);
+    const project = this.props.store.projects.find((project) => {
+      console.log(project.slug, this.props.project);
+      return project.slug === this.props.project;
+    });
+    if (project) {
+      window.document.title = `Amanda Roaf | ${project.card_sub_title}`;
+    }
     return (
       <div>
         <section className="wierd-page-problem-fix">

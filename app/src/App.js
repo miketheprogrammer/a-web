@@ -31,6 +31,7 @@ class App extends Component {
 
 
   renderFull() {
+    window.document.title = 'Amanda Roaf | Portfolio';
     return (
       <div>
         <section className="wierd-page-problem-fix">

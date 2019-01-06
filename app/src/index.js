@@ -33,7 +33,6 @@ ReactDOM.render(
   <div>
     <Switch>
     <Route path="/projects/:slug" component={(props) => {
-        console.log('routerx', props);
         return (<Project project={ props.match.params.slug } store={ applicationStore }/>)
       }} />
       <Route path="" component={() => <App store={ applicationStore }/>} />
